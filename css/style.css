@@ -171,7 +171,7 @@ mark{
 }
 .message{
   padding-block: 70px;
-  background-image: url(/images/bg_01.jpg);
+  background-image: url(../images/bg_01.jpg);
   background-attachment: fixed;
   color: white;
 }
@@ -431,12 +431,5 @@ mark{
     opacity: 1;
     pointer-events: auto;
   }
-  /*.he-nav-ham li+li{
-    border-left:none;
-    border-top:1px white solid;
-  }*/
-  /**/
-
-  /* https://www.pyxofy.com/how-to-toggle-display-with-javascript/ */
 
 }
