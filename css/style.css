@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+a{
+  text-decoration: none; 
+}
+header{
+  border-top: solid 4px #6d238d;
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
+}
+body{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1b0529;
+  font-family : "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN",
+      "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+}
+
+footer{
+  text-align: center;
+  background:linear-gradient(0,#6d238d,#12125e) ;  
+  color: white;
+  padding-block: 30px;
+}
+.ham{
+  display: none;
+}
+
+.he-nav-2{
+  margin-bottom: 30px; 
+  margin-inline: auto;
+  align-items: center;
+  text-align: center;
+}
+.he-nav-2 nav {
+  display: inline-block;
+}
+.he-nav-2 li{
+  padding-inline:5px;
+}
+.he-nav-2 li:nth-child(n+2){
+  border-left:1px white solid;
+}
+.he-nav-2 a{
+  color: white;
+  text-decoration: none; 
+}
+
+.wrapper{
+  margin-inline: auto;
+}
+.widthmax{
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h3{
+  font-size: 20px;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+}
+
+.he-nav-1 ul{
+  justify-content: space-around;  
+}
+.space{
+  margin-bottom:1em;
+}
+
+.he-left img{
+  vertical-align: middle;
+  height: 120px;
+  width: 128px;
+}
+.he-right{
+  margin-block: auto;
+}
+.he-inner{
+  align-items: center;
+}
+.he-inner-1{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 30px;
+}
+.he-inner-2{
+  background-color: #6d238d;
+  justify-content: space-around;
+  padding-block: 1em;
+
+}
+.he-inner-2 nav a{
+  font-size: 18px;
+  color: white; 
+  text-decoration: none;
+}
+.sub-1{
+  padding-block: 70px;
+  max-width: 650px;
+  text-align: center;
+  margin-inline: auto;
+}
+.sub-1 p{
+  text-align: left;
+}
+.sub-1 h3{
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+mark{
+  background-color: #ded0e7;
+  margin-inline: 3px;
+  padding-inline: 3px;
+  color: #1b0529;
+}
+.top-mv img{
+  width:100%;
+  height: auto;
+  display: block;
+}
+.sub-2{
+  padding-block: 70px;
+  text-align: center;
+  background-color: #d9d6e1; 
+}
+.course{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.cs-ch{
+  width: 300px;
+}
+.cs-ch img{
+  width:auto;
+  height:200px;
+}
+.cs-ch h3{
+  margin-block: 10px;
+}
+.cs-ch p{
+  text-align: left;
+}
+.btn{
+  background-color: white;
+  border: solid black 1px;
+  width: 245px;
+  height: 50px;
+  align-items: center;
+  margin-inline: auto;
+  padding: 11px;
+  border-radius: 5px;
+}
+.btn a{
+  text-decoration: none;
+  color: black;
+}
+.btn:hover{
+  background-color: #cfc5d5;
+}
+.message{
+  padding-block: 70px;
+  background-image: url(/images/bg_01.jpg);
+  background-attachment: fixed;
+  color: white;
+}
+.message h2{
+   text-align: center; 
+}
+.message-inner{
+  width:650px;
+  align-items: center;
+  margin-inline: auto;
+}
+.tra1{
+  text-align: justify;
+}
+.tra1 img{
+   float: left; 
+   width: 180px;
+   height: 220px;
+   margin-right: 15px;
+   margin-bottom: 15px;
+}
+.tra1-name{
+  text-align: right;
+}
+.date{
+  padding-block: 70px;
+}
+.date table{
+  border-collapse: collapse;
+  width:650px;
+  text-align: left;
+  align-items: center;
+  margin-inline: auto;
+}
+.date th,td{
+  border: 1px #b2a9b5 solid;
+  padding: 10px;
+}
+.date th{
+  background-color: #d9d4db;
+  font-weight: lighter; 
+}
+.gototop{
+  position: fixed;
+  bottom:0;
+  right:10%;
+  background-color: #6d238d;
+  width: 176px;
+  height: 45px;
+}
+.gototop a{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+}
+.gototop>a,.gototop>a>img{
+  display: block;
+}
+.he-inner-3{
+  display:none;
+}
+
+.menu-ham{
+  display:none;
+}
+.he-nav-ham{
+  display:none;
+}
+
+
+@media screen and (max-width:900px){
+  .course{
+  display:grid;
+  gap: 20px;
+  justify-content: center;
+  }   
+}
+
+@media screen and (max-width:768px) {
+ 	/*　画面サイズが650px以下の場合ここの記述が適用される　*/
+  .he-right{
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    top: 37px;
+    right: 90px;
+  }
+  .sub-1{
+  max-width: 350px;
+  }
+  .message-inner{
+    max-width: 350px;
+  }
+    .tra1,.tra1-name{
+  text-align: justify;
+}
+  .tra1 img{
+    display: block;
+    float: none;
+    align-items: center;
+    margin-inline: auto;
+  }
+  .date table{
+  width:350px;    
+  }
+  .date th,td{
+  text-align: center;
+  display: block;
+  }
+
+  nav ul{
+  display:inline-grid;
+  column-gap: 1em;
+  grid-template-columns: repeat(2,auto);
+  text-align: center;
+  margin-inline: auto;
+  }
+  .he-inner-2{
+    display:none;
+  }
+  .he-nav-2 li{
+  padding-block:5px;
+  }
+  .he-nav-2 li:nth-child(n+2){
+    border-left:none;
+        border-top:1px white solid;
+  }
+  .he-nav-2 li:nth-child(n+3){
+    border-left:none;
+
+  }
+
+  .ham{
+    position: relative;
+    z-index:10001;
+    border: none;
+    background-color:transparent ;
+    width: 40px;
+    height: 40px;
+    margin:10px;
+  }
+  .ham span {
+  width:40px;
+  margin:8px 0;
+  height: 2px;
+  background-color: #000;
+  position: relative;
+  transition: ease .4s;
+  display: block;
+}
+  .menu-ham{
+    display:block;
+    width:40px;
+    height:40px;
+    position:relative;
+    z-index:10001;
+    cursor:pointer;
+    background:transparent;
+    border:none;
+    top:20px;
+    right:0px;
+  }
+  .menu-ham span{
+    display: block;
+    position:absolute;
+    left: 0;      
+    width: 100%;
+    height:3px;  
+    background-color: #000;
+    transition:all 0.3s ease;
+  }
+
+  .menu-ham span:nth-child(1){
+    top: 0;
+  }
+  .menu-ham span:nth-child(2){
+    top: 14px;
+  }
+  .menu-ham span:nth-child(3){
+    top: 28px;
+  }
+  .he-nav-1.active{
+    transform:translateY(0)
+  }
+  .menu-ham.active span:nth-child(1){
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  .menu-ham.active span:nth-child(2){
+    opacity: 0;
+  }
+  .menu-ham.active span:nth-child(3){
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+  .he-nav-1{
+  text-align: center;
+  display: none;
+  }
+  .tra1,.tra1-name{
+  text-align: justify;
+  }
+  .he-inner-3{
+  display:block;
+  position:relative;
+  min-height: 40px;
+}
+  .he-nav-ham{
+    position: fixed;
+    top:0;
+    left:50%;
+    width:80vw;
+    height:380px;
+    background-color: #6d238d;
+    text-align: center;
+    z-index:10000;
+    margin-top: 50px;
+    transform: translate(-50%,-100%);
+    /*transform:translateY(-100%);*/
+    transition: transform 0.6s ease,opacity 0.5s ease;
+    opacity:0;
+    pointer-events:none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .he-nav-ham ul{
+    width:100%;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+  }
+  .he-nav-ham ul a{
+    color: #ffffff;
+  }
+  
+  /**/
+  nav ul{
+  display:block;
+  text-align: center;
+  }
+  .he-nav-ham li{
+    font-size: 20px;
+    padding: 15px 0;
+    border-top:1px solid #ccc;
+    width:100%;
+    box-sizing: border-box;
+    text-align:center;
+  }
+  .he-nav-ham li:first-child{
+    border-top: none;
+  }
+  .he-nav-ham.active{
+    transform:translate(-50%,0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  /*.he-nav-ham li+li{
+    border-left:none;
+    border-top:1px white solid;
+  }*/
+  /**/
+
+  /* https://www.pyxofy.com/how-to-toggle-display-with-javascript/ */
+
+}
